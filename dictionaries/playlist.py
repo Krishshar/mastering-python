@@ -1,6 +1,6 @@
 playlist = {
-	'title': 'patagonia bus', 
-	'author': 'colt steele', 
+	'title': 'ghar par', 
+	'author': 'jayesh patel', 
 	'songs': [
 		{'title': 'song1', 'artist': ['blue'], 'duration': 2.5},
 		{'title': 'song2', 'artist': ['kitty', 'djcat'], 'duration': 5.25},
