@@ -58,6 +58,30 @@ class LinkedList:
 
     def generate(self, n, min_value, max_value):
         self.head = self.tail = None
-        for i in range(n):
+        for _ in range(n):
             self.add(randint(min_value, max_value))
         return self
+
+    # def print_reverse(self):
+    # 	if self.head is None:
+    # 		return
+    # 	self.print_reverse(self.head.next)
+    # 	print(self.head.value)
+
+    def reverse(self):
+        current = self.head
+        prev = None
+        nxt = None
+        while current:
+            nxt = current.next
+            current.next = prev
+            prev = current
+            current = nxt
+        self.head = prev
+
+
+if __name__ == "__main__":
+    ll = LinkedList([1, 2, 4, 5, 6])
+    print(ll)
+    ll.reverse()
+    print(ll)
